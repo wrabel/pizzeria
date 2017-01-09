@@ -1,0 +1,35 @@
+﻿<Window x:Class="pizzeria.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pizzeria"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="725">
+    <Grid>
+        <Button x:Name="btn_pizza_add" Content="Nowa pizza" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Click="btn_pizza_add_Click"/>
+        <Button x:Name="btn_skladnik_add" Content="Dodaj Skladnik" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="120" Click="btn_skladnik_add_Click"/>
+        <Button x:Name="btn_dostawa" Content="Dostawa" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="120" Click="btn_dostawa_Click"/>
+        <Button x:Name="btn_exit" Content="Wyjscie" HorizontalAlignment="Left" Margin="10,389,0,0" VerticalAlignment="Top" Width="75" Click="btn_exit_Click"/>
+        <TextBlock x:Name="txt_nazwa" HorizontalAlignment="Left" Margin="438,14,0,0" TextWrapping="Wrap" Text="nazwa pizzy: " VerticalAlignment="Top"/>
+        <TextBox x:Name="txtbox_nazwa" HorizontalAlignment="Left" Height="23" Margin="531,9,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_add_nazwa_pizzy" Content="Dodaj" HorizontalAlignment="Left" Margin="531,37,0,0" VerticalAlignment="Top" Width="75" Click="btn_add_Click"/>
+        <TextBlock x:Name="txt_skladnik" HorizontalAlignment="Left" Margin="438,76,0,0" TextWrapping="Wrap" Text="nazwa skladnika:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtbox_skladnik" HorizontalAlignment="Left" Height="23" Margin="531,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="txt_cena_skladnika" HorizontalAlignment="Left" Margin="438,120,0,0" TextWrapping="Wrap" Text="cena skladnika: " VerticalAlignment="Top"/>
+        <TextBox x:Name="txtbox_cena_skladnika" HorizontalAlignment="Left" Height="23" Margin="531,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_add_skladnika" Content="Sodaj" HorizontalAlignment="Left" Margin="531,148,0,0" VerticalAlignment="Top" Width="75" Click="btn_add_skladnika_Click"/>
+        <TextBlock x:Name="txt_sos" HorizontalAlignment="Left" Margin="438,186,0,0" TextWrapping="Wrap" Text="sos: " VerticalAlignment="Top"/>
+        <TextBox x:Name="txtbox_sos" HorizontalAlignment="Left" Height="23" Margin="531,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_add_sos" Content="Dodaj" HorizontalAlignment="Left" Margin="531,222,0,0" VerticalAlignment="Top" Width="75" Click="btn_add_sos_Click"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+            <ComboBoxItem Content="Na wynos" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Na miejscu" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <TextBlock x:Name="txt_godzina" HorizontalAlignment="Left" Margin="10,133,0,0" TextWrapping="Wrap" Text="Godzina (hh:mm):" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtbox_godzina" HorizontalAlignment="Left" Height="23" Margin="10,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_sprawdz_godzine" Content="Sprawdz" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top" Width="120" Click="btn_sprawdz_godzine_Click"/>
+        <TextBlock x:Name="txt_zamowienie" HorizontalAlignment="Left" Margin="171,14,0,0" TextWrapping="Wrap" Text="Zamowienie: " VerticalAlignment="Top" Width="238" Height="356"/>
+
+    </Grid>
+</Window>
